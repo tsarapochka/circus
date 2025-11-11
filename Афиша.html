@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша</title>
+    <link rel="stylesheet" type="text/css" href ="style.css"> 
+</head>
+<body>
+<div class="wrapper">
+<header>
+        <nav>
+            <ul>
+                <li><a href = "Главная.html">Главная</a></li>
+                <li><a href = "Афиша.html" class="link-active">Афиша</a></li>
+                <li><a href = "Артисты.html">Артисты</a></li>
+                <li><a href = "Фотогалерея.html">Фотогалерея</a></li>
+                <li><a href = "Отзывы.html">Отзывы</a></li>
+                <li><a href = "Контакты.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <a href="Главная.html"><img src="img/Untitled_logo_4_free-file.jpg" alt="Логотип"></a>
+</header>
+<section>
+<div class="program-container">
+    <h2>Программа</h2>
+    <div class="program-section">
+        <div class="program-list">
+        <ol>
+            <li>Жонглеры  с кольцами</li>
+            <li>Воздушные гимнасты на полотнах</li>
+            <li>Эквилибрический этюд</li>
+            <li>Акробаты</li>
+            <li>Хула-хупы</li>
+            <li>Воздушные гимнасты в кольце</li>
+            <li>Жонглеры с мячами</li>
+            <li>Эквилибристы на моноциклах</li>
+            <li>Парная акробатика</li>
+            <li>Акробаты со скакалками</li>
+        </ol>
+        </div>
+        <img class="firstimg" src="img/загруженное.jpg">
+    </div>
+    <div class="program-section second-program-section">
+        <img class="secondimg" src="img/загруженное (1).jpg">
+        <div class="program-list">
+        <ol start="11">
+            <li>Корд-де-волан</li>
+            <li>Эквилибр на шаре</li>
+            <li>Воздушные гимнасты на ремнях</li>
+            <li>Акробаты на батуте</li>
+            <li>Трюки со скакалками</li>
+            <li>Эквилибр на канате</li>
+            <li>Пластический этюд</li>
+            <li>Акробаты с лестницами</li>
+            <li>Жонглеры с булавами</li>
+            <li>Фокусы</li>
+        </ol>
+        </div>
+    </div>
+</div>
+<div class="schedule-container">
+    <h2>Расписание</h2>
+    <div class="schedule-section">
+        <div class="number">1</div>
+        <div class="day">Ноября</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Москва, ул. Новгородская, 9</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+    <div class="schedule-section">
+        <div class="number">8</div>
+        <div class="day">Ноября</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Владивосток, ул. Первомайская, 3</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+    <div class="schedule-section">
+        <div class="number">15</div>
+        <div class="day">Ноября</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Ульяновск, ул. Набережная, 7</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+    <div class="schedule-section">
+        <div class="number">22</div>
+        <div class="day">Ноября</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Курск, ул. Пушкинская, 5</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+    <div class="schedule-section">
+        <div class="number">29</div>
+        <div class="day">Ноября</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Самара, ул. Ленинградская, 4</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+    <div class="schedule-section">
+        <div class="number">6</div>
+        <div class="day">Декабря</div>
+        <div class="time">17:00</div>
+        <div class="adress">г. Магнитогорск, ул. Псковская, 2</div>
+        <a href="#ticket-form" class="ticket-link"><button type="submit" class="submit-btn">Заказать билет</button></a>
+    </div>
+</div>
+<div class="container2" id="ticket-form">
+        <form class="registration-form">
+            <h3 class="form-title">Заказать билет</h3>
+        <div class="form-group">
+            <label for="name" class="form-label">ФИО</label>
+            <input type="text" id="name" class="form-input" placeholder="Введите ваше ФИО" required>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="form-label">Телефон</label>
+            <input type="number" id="phone" class="form-input" placeholder="+70000000000" 
+                inputmode="numeric"
+                pattern="[\+7|8][0-9]"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-input" placeholder="Введите ваш email" required>
+        </div>
+            <button type="submit" class="submit-btn">Купить</button>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-email">trikota@gmail.com</div>
+        <div class="footer-social">
+            <a href="https://vk.com"><img src="img/icons8-вконтакте-48.png" alt="VK"></a>
+            <a href="https://www.youtube.com"><img src="img/icons8-youtube-50.png" alt="Youtube"></a>
+            <a href="https://web.telegram.org"><img src="img/icons8-телеграм-50 (1).png" alt="Telegram"></a>
+        </div>
+        <div class="footer-phone">+7(964)663-61-23</div>
+    </div>
+</footer>
+</div>
+</body>
+</html>
